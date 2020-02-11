@@ -1,15 +1,18 @@
-# [overreacted.io](https://overreacted.io/)
+### 我的博客
 
-My personal blog. Forked from [Gatsby blog starter](https://github.com/gatsbyjs/gatsby-starter-blog). Syntax theme based on [Sarah Drasner's Night Owl](https://github.com/sdras/night-owl-vscode-theme/) with small tweaks.
+地址：[http://yansu.org](http://yansu.org)
 
-To run locally, `yarn`, then `yarn dev`, then open https://localhost:8000.
+### 安装说明
 
-## Contributing Translations
+1. fork库到自己的github
+2. 修改名字为：`username.github.io`
+3. clone库到本地，参考`_posts`中的目录结构自己创建适合自己的文章目录结构
+4. 修改CNAME，或者删掉这个文件，使用默认域名
+5. 修改`_config.yml`配置项
+6. It's done!
 
-You can translate any article on the website into your language!
+### 分支说明
 
-Add a Markdown file with the translation to the corresponding article folder. For example `index.fr.md` in `src/pages/optimized-for-change/`.
-
-If you're the first one to translate a post to your language, you'll need to add it to to the list in `./i18n.js`. See [this PR](https://github.com/gaearon/overreacted.io/pull/159) for an example. If your language needs special font characters, add it to the appropriate place in [this list](https://github.com/gaearon/overreacted.io/blob/5de6c128f798506a54a1a34c32cd5446beecc272/src/utils/i18n.js#L15).
-
-**Please don't send translations for the Russian language — I will be translating into it myself when I find time.**
+- 三栏布局（master分支，基于[3-Jekyll](https://github.com/P233/3-Jekyll)）
+- 三栏布局 (bootstrap-based分支，基于Bootstrap)
+- 单栏布局（first-ui分支，基于Bootstrap）
