@@ -5,7 +5,7 @@ description: > # this means to ignore newlines until "baseurl:"
   자연어처리 블로그
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: http://zizun.github.io/ # the base hostname & protocol for your site
-rss_url: /pages/feed.xml
+#rss_url: /pages/feed.xml
 author: ZIZUN
 
 # Sidebar filter
@@ -14,11 +14,11 @@ filter: 'category'
 recent_num: 20
 
 # Social account
-twitter:
-weibo:
+#twitter:
+#weibo:
 github: ZIZUN
-instagram:
-linkedin:
+#instagram:
+#linkedin:
 
 # avatar and Favicon
 avatar: https://zizun.github.io/img/profile.jpg
