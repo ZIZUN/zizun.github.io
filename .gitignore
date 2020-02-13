@@ -1,10 +1,10 @@
-_site/
-_drafts/
+_site
 .DS_Store
-.idea/
+.jekyll
+.jekyll-metadata
+.bundle
 .sass-cache
 Gemfile
 Gemfile.lock
-_posts/.MWebMetaData/
-.jekyll-metadata
-start
+node_modules
+package.json
