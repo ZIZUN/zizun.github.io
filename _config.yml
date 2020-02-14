@@ -109,8 +109,8 @@ author:
   name             : "ZIZUN"
   avatar           : "/assets/images/my.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "NLP, Deeplearning research"
-  location         :
-  email            :
+#  location         :
+#  email            :
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
