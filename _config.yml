@@ -19,16 +19,16 @@ locale                   : "en-US"
 title                    : "자연어처리 블로그"
 title_separator          : "-"
 name                     : "ZIZUN"
-description              : "NLP, Deeplearning research"
+description              : "Identifing urban phenomenon with data science."
 url                      : "https://zizun.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : "https://github.com/ZIZUN" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : "zizun/zizun.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # "/assets/images/my.jpg"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
-comments: true
+comments:
   provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
   disqus:
     shortname            : "zizun-gihub-io" # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
@@ -98,9 +98,9 @@ social:
 
 # Analytics
 analytics:
-  provider               : #"google-gtag" # false (default), "google", "google-universal", "custom"
+  provider               : "google-gtag" # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          : #"UA-142796433-1"
+    tracking_id          : "UA-142796433-1"
     anonymize_ip         : # true, false (default)
 
 
@@ -110,47 +110,47 @@ author:
   avatar           : "/assets/images/my.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "NLP, Deeplearning research"
   location         : "Korea"
-  email            : "cap1232@naver.com"
+  email            :
   links:
-    #- label: "Email"
-    #  icon: "fas fa-fw fa-envelope-square"
-    #  url: mailto:cap1232@naver.com
-#    - label: "Website"
-#      icon: "fas fa-fw fa-link"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: mailto:cap1232@naver.com
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
-    - label: #"Twitter"
-      icon: #"fab fa-fw fa-twitter-square"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
       # url: "https://twitter.com/"
-    - label: #"Facebook"
-      icon: #"fab fa-fw fa-facebook-square"
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/zizun"
-    - label: #"Instagram"
-      icon: #"fab fa-fw fa-instagram"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/tlsdydrms"
 
 # Site Footer
 footer:
   links:
-#    - label: "Twitter"
-#      icon: "fab fa-fw fa-twitter-square"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
       # url:
-#    - label: "Facebook"
-#      icon: "fab fa-fw fa-facebook-square"
+    - label: "Facebook"
+      icon: "fab fa-fw fa-facebook-square"
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       # url:
-#    - label: "GitLab"
-#      icon: "fab fa-fw fa-gitlab"
+    - label: "GitLab"
+      icon: "fab fa-fw fa-gitlab"
       # url:
-#    - label: "Bitbucket"
-#      icon: "fab fa-fw fa-bitbucket"
+    - label: "Bitbucket"
+      icon: "fab fa-fw fa-bitbucket"
       # url:
-#    - label: "Instagram"
-#      icon: "fab fa-fw fa-instagram"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
       # url:
 
 
@@ -291,9 +291,9 @@ defaults:
       author_profile: true
       read_time: true
       comments: true
-      share: false
+      share: true
       related: true
-      toc_sticky: false
+      toc_sticky: true
 
   # _pages
   - scope:
@@ -302,7 +302,7 @@ defaults:
     values:
       layout: single
       author_profile: true
-      read_time: true
-      comments: true
-      share: false
+      read_time: false
+      comments: false
+      share: true
       related: false
