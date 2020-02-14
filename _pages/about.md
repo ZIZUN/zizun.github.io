@@ -12,6 +12,3 @@ Natural Language Processing
 
 
 ---
-layout: default
-comments: true
----
