@@ -17,7 +17,7 @@ last_modified_at: 2020-08-30T08:06:00-05:00
 # Abstract
 
 Entity linking = 문장에서 개체mention을 찾아내서 지식베이스 (e.g. wikipedia)에 연결하는 자연어처리 Task
-![png](/images/table1.png "표1"){: width="100%" height="50%"}  
+![png](/images/table1.png "표1"){: width="100%" height="100%"}  
 
 1. 파이프라인 방식 : Mention Detection, Entity disambiguation 따로
 2. End to End model : MD, ED 결합한 모델
