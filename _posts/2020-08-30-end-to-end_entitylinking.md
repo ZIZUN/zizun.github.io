@@ -22,6 +22,8 @@ Entity linking = 문장에서 개체mention을 찾아내서 지식베이스 (e.g
 1. 파이프라인 방식 : Mention Detection, Entity disambiguation 따로
 2. End to End model : MD, ED 결합한 모델
 
+Pipeline구조의 Entity linking
+
 
 ## 1. Embedding
 
