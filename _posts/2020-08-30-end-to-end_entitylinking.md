@@ -53,6 +53,3 @@ Score 한계점 δ보다 Ψ 가 높을경우 그 span에 entity를 linking함. s
 
 “Local score”만으로는 입력하는 문서내의 span끼리의 연관관계를 반영하기 부족. 따라서 global disambiguation방법을 넣었는데,
 Local score가 충분히 높은 mention span, entity 조합 V_G의 모든 entity들의 평균(자신의 mention은 제외) 과 자신의 엔티티와 유사도를 구한 값을 Global score로 쓴다.
-
-~~
-!!
