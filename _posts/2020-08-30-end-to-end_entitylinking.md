@@ -23,7 +23,7 @@ Entity linking = 문장에서 개체mention을 찾아내서 지식베이스 (e.g
 2. End to End model : MD, ED 결합한 모델
 
 
-Embedding
+1. Embedding
 
 Character 임베딩(같은 가중치를 공유하는 하나의 모델 사용) 과
 Word2vec을 통해 사전학습된 단어임베딩을 concatenate해서 하나의 word embedding을 생성(V_k),
