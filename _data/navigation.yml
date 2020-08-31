@@ -1,15 +1,8 @@
 # main links
 main:
-   - title: "Main"
-     url: /about/
-#   - title: "Project"
-#     url: /categories/project/
-   - title: "Study"
-     url: /categories/study/
-   - title: "Category"
+   - title: "목록"
      url: /categories/
-   - title: "Search"
+   - title: "검색"
      url: /search/
-
   # - title: "Sitemap"
   #   url: /sitemap/
