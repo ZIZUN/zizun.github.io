@@ -118,6 +118,8 @@ NER + ED model이 좋은 성능을 내는 것을 확인할 수 있다.<br><br>
 빨강(1,3,5) = 멘션 잘 찾고 엔티티도 잘 찾았는데, high score를 못받아서 not annotation<br>
 주황(3,4) = Korean War을 골라야 되는데 Korean - > korea(entity)로 해버렸다.
 
+데이터셋에 대해서나 실험관련 내용은 논문에 더 자세히 나와있다.
+
 # Reference
 
   * [EndtoEnd Neural Entity Linking][1]
