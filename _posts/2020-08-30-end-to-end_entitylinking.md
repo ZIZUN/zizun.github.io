@@ -39,7 +39,7 @@ Deep Joint Entity Disambiguation with Local Neural Attention 논문을 참고.<b
 
 멘션의 첫 단어, 끝 단어의 임베딩, “Soft head 임베딩” 을 Concatenation 하여 고정된 크기의 멘션 임베딩 생성(X_m)
 
-![png](/images/image6.png "그림2"){: width="100%" height="100%"}  
+![png](/images/image2.PNG "그림2"){: width="100%" height="100%"}  
 
 ## 3. Final local Score
 
