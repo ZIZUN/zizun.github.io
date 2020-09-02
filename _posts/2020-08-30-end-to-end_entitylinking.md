@@ -82,7 +82,7 @@ Score 한계점 δ보다 Ψ 가 높을경우 그 span에 entity를 linking함. s
 
 학습에는 AIDA/CoNLL 데이터셋(946개의 문서와 문서 내의 18448개의 mention)을 사용했고, Test에는 ED, EL를 테스트 하기 위해 만들어진 Gerbil Platform을 이용했다.
 
-“strong matching” : 멘션의 바운더리가 정확하고, gold(정답) entity annotation을 예측
+“strong matching” : 멘션의 바운더리가 정확하고, gold(정답) entity annotation을 예측<br>
 “weak matching” : 멘션의 바운더리가 정확하지 않고 겹쳐치고, gold entity annotation을 예측
 
 
@@ -102,9 +102,9 @@ NER + ED model이 좋은 성능을 내는 것을 확인할 수 있다.
 ![png](/images/image8.png "그림8"){: width="100%" height="100%"} 
 <AIDA A 데이터셋에서 멘션 길이 별 맞는 entity 예측할 확률>
 
-데이터셋을 보면 멘션길이가 1~2가 90프로 이상을 차지하는 것을 볼 수 있다.
-따라서 "soft head embedding"이 왜 성능을 올리는데 크게 의미 없음을 알 수 있다
-
+데이터셋을 보면 멘션길이가 1~2가 90프로 이상을 차지하는 것을 볼 수 있다.<br>
+따라서 "soft head embedding"이 왜 성능을 올리는데 크게 의미 없음을 알 수 있다.<br>
+<br>
 윗값은 정답 entity를 맞출 확률이고, 아랫값은 정답 entity를 맞춘것 + 
 후보엔티티에서 score가 가장 높은 엔티티가 정답엔티티 이지만 score가 "한계점"을 넘지 못한 것을 포함한 확률이라 보면 된다.
 따라서 아랫값이 조금 더 높다.<br>
