@@ -111,6 +111,10 @@ NER + ED model이 좋은 성능을 내는 것을 확인할 수 있다.
 그리고 멘션의 길이가 길어질수록 성능이 현저히 떨어지는 것을 보인다.
 
 ![png](/images/image9.png "그림9")
+![png](/images/image8.png "그림8"){: width="100%" height="100%"}
+
+![png](/images/image9.png "그림9")
+![png](/images/image8.png "그림8"){: width="100%" height="100%"}
 ![test3](/images/image9.png)
 <AIDA A 데이터셋에서 멘션 길이 별 맞는 entity 예측할 확률>
 
