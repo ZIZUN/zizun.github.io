@@ -100,17 +100,6 @@ NER + ED model이 좋은 성능을 내는 것을 확인할 수 있다.
 "Strong matching"보단 score가 미세하게 오른걸 볼 수 있다.
 
 ![png](/images/image8.png "그림8"){: width="100%" height="100%"}<br>
-![png](/images/image9.png "그림9"){: width="100%" height="100%"}<br>
-![png](/images/image9.png "그림9"){: width="100%" height="100%"}<br>
-![png](/images/image9.png "그림9"){: width="100%" height="100%"}<br>
-![png](/images/image9.png "그림9"){: width="100%" height="100%"}<br>
-![png](/images/image9.png "그림9"){: width="100%" height="100%"}<br>
-![png](/images/image9.png "그림9"){: width="100%" height="100%"}<br>
-![png](/images/image9.png "그림9"){: width="100%" height="100%"}<br>
-![png](/images/image9.png "그림9"){: width="100%" height="100%"}<br>
-![png](/images/image9.png "그림9"){: width="100%" height="100%"}<br>
-![png](/images/image9.png "그림9"){: width="100%" height="100%"}<br>
-
 AIDA A 데이터셋에서 멘션 길이 별 맞는 entity 예측할 확률
 
 데이터셋을 보면 멘션길이가 1~2가 90프로 이상을 차지하는 것을 볼 수 있다.<br>
