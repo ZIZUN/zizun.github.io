@@ -87,7 +87,7 @@ Score 한계점 δ보다 Ψ 가 높을경우 그 span에 entity를 linking함. s
 
 
 ![png](/images/image6.png "그림6"){: width="100%" height="100%"}  
-<Entity Linking, Gerbil 플랫폼에서 “strong matching” 결과>
+ => Entity Linking, Gerbil 플랫폼에서 “strong matching” 결과
 
 빨간색이 first 파랑색이 second score 라고 보면 된다.<br>
 논문에서 말했다시피, AIDA셋으로 train해서 AIDA셋에서 test했을 때 EL모델이 좋은 성능을 내는 것을 볼 수 있고, 
@@ -95,12 +95,12 @@ train set과 다른 annotation conventions를 따르는 test set에 대해 평�
 NER + ED model이 좋은 성능을 내는 것을 확인할 수 있다.
 
 ![png](/images/image7.png "그림7"){: width="100%" height="100%"}
-<Entity Linking, Gerbil 플랫폼에서 “weak matching” 결과>
+ => Entity Linking, Gerbil 플랫폼에서 “weak matching” 결과
 
 "Strong matching"보단 score가 미세하게 오른걸 볼 수 있다.
 
 ![png](/images/image8.png "그림8"){: width="100%" height="100%"}<br>
-AIDA A 데이터셋에서 멘션 길이 별 맞는 entity 예측할 확률
+ => AIDA A 데이터셋에서 멘션 길이 별 맞는 entity 예측할 확률
 
 데이터셋을 보면 멘션길이가 1~2가 90프로 이상을 차지하는 것을 볼 수 있다.<br>
 따라서 "soft head embedding"이 왜 성능을 올리는데 크게 의미 없음을 알 수 있다.<br>
@@ -112,7 +112,7 @@ AIDA A 데이터셋에서 멘션 길이 별 맞는 entity 예측할 확률
 
 
 ![png](/images/image9.png "그림9"){: width="100%" height="100%"}<br>
-<AIDA A 데이터셋에서 멘션 길이 별 맞는 entity 예측할 확률>
+ => AIDA A 데이터셋에서 멘션 길이 별 맞는 entity 예측할 확률
 
 빨강(1,3,5) = 멘션 잘 찾고 엔티티도 잘 찾았는데, high score를 못받아서 not annotation<br>
 주황(3,4) = Korean War을 골라야 되는데 Korean - > korea(entity)로 해버렸다.
