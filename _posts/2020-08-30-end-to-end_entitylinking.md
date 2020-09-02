@@ -86,7 +86,7 @@ Score 한계점 δ보다 Ψ 가 높을경우 그 span에 entity를 linking함. s
 “weak matching” : 멘션의 바운더리가 정확하지 않고 겹쳐치고, gold entity annotation을 예측
 
 
-![png](/images/image6.PNG "그림6"){: width="100%" height="100%"}  
+![png](/images/image6.png "그림6"){: width="100%" height="100%"}  
 <Entity Linking, Gerbil 플랫폼에서 “strong matching” 결과>
 
 빨간색이 first 파랑색이 second score 라고 보면 된다.<br>
@@ -94,12 +94,12 @@ Score 한계점 δ보다 Ψ 가 높을경우 그 span에 entity를 linking함. s
 train set과 다른 annotation conventions를 따르는 test set에 대해 평가할 경우, 
 NER + ED model이 좋은 성능을 내는 것을 확인할 수 있다.
 
-![png](/images/image7.PNG "그림7"){: width="100%" height="100%"}  
+![png](/images/image7.png "그림7"){: width="100%" height="100%"}  
 <Entity Linking, Gerbil 플랫폼에서 “weak matching” 결과>
 
 "Strong matching"보단 score가 미세하게 오른걸 볼 수 있다.
 
-![png](/images/image8.PNG "그림8"){: width="100%" height="100%"} 
+![png](/images/image8.png "그림8"){: width="100%" height="100%"} 
 <AIDA A 데이터셋에서 멘션 길이 별 맞는 entity 예측할 확률>
 
 데이터셋을 보면 멘션길이가 1~2가 90프로 이상을 차지하는 것을 볼 수 있다.
@@ -110,6 +110,6 @@ NER + ED model이 좋은 성능을 내는 것을 확인할 수 있다.
 따라서 아랫값이 조금 더 높다.<br>
 그리고 멘션의 길이가 길어질수록 성능이 현저히 떨어지는 것을 보인다.
 
-![png](/images/image9.PNG "그림9"){: width="100%" height="100%"} 
+![png](/images/image9.png "그림9"){: width="100%" height="100%"} 
 빨강(1,3,5) = 멘션 잘 찾고 엔티티도 잘 찾았는데, high score를 못받아서 not annotation<br>
 주황(3,4) = Korean War을 골라야 되는데 Korean - > korea(entity)로 해버렸다.
