@@ -113,3 +113,5 @@ NER + ED model이 좋은 성능을 내는 것을 확인할 수 있다.
 ![png](/images/image9.png "그림9"){: width="100%" height="100%"} 
 빨강(1,3,5) = 멘션 잘 찾고 엔티티도 잘 찾았는데, high score를 못받아서 not annotation<br>
 주황(3,4) = Korean War을 골라야 되는데 Korean - > korea(entity)로 해버렸다.
+
+
