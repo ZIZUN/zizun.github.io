@@ -108,11 +108,11 @@ NER + ED model이 좋은 성능을 내는 것을 확인할 수 있다.
 윗값은 정답 entity를 맞출 확률이고, 아랫값은 정답 entity를 맞춘것 + 
 후보엔티티에서 score가 가장 높은 엔티티가 정답엔티티 이지만 score가 "한계점"을 넘지 못한 것을 포함한 확률이라 보면 된다.
 따라서 아랫값이 조금 더 높다.<br>
-그리고 멘션의 길이가 길어질수록 성능이 현저히 떨어지는 것을 보인다.<br>
+그리고 멘션의 길이가 길어질수록 성능이 현저히 떨어지는 것을 보인다.
 
 ![png](/images/image9.png "그림9"){: width="100%" height="100%"}  
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br>
+<AIDA A 데이터셋에서 멘션 길이 별 맞는 entity 예측할 확률>
+
 빨강(1,3,5) = 멘션 잘 찾고 엔티티도 잘 찾았는데, high score를 못받아서 not annotation<br>
 주황(3,4) = Korean War을 골라야 되는데 Korean - > korea(entity)로 해버렸다.
 
