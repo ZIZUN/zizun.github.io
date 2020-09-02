@@ -110,7 +110,7 @@ NER + ED model이 좋은 성능을 내는 것을 확인할 수 있다.
 따라서 아랫값이 조금 더 높다.<br>
 그리고 멘션의 길이가 길어질수록 성능이 현저히 떨어지는 것을 보인다.<br>
 
-![png](/images/image9.png "그림9"){: width="100%" height="100%"}
+![png](/images/image9.png "그림9"){: width="100%" height="100%"}  
 <br>
 빨강(1,3,5) = 멘션 잘 찾고 엔티티도 잘 찾았는데, high score를 못받아서 not annotation<br>
 주황(3,4) = Korean War을 골라야 되는데 Korean - > korea(entity)로 해버렸다.
