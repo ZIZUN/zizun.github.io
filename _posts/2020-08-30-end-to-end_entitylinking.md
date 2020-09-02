@@ -94,12 +94,12 @@ Score 한계점 δ보다 Ψ 가 높을경우 그 span에 entity를 linking함. s
 train set과 다른 annotation conventions를 따르는 test set에 대해 평가할 경우, 
 NER + ED model이 좋은 성능을 내는 것을 확인할 수 있다.
 
-![png](/images/image7.png "그림7"){: width="100%" height="100%"}  
+![png](/images/image7.png "그림7"){: width="100%" height="100%"}
 <Entity Linking, Gerbil 플랫폼에서 “weak matching” 결과>
 
 "Strong matching"보단 score가 미세하게 오른걸 볼 수 있다.
 
-![png](/images/image8.png "그림8"){: width="100%" height="100%"}
+![png](/images/image8.png "그림8"){: width="100%" height="100%"}<br>
 <AIDA A 데이터셋에서 멘션 길이 별 맞는 entity 예측할 확률>
 
 데이터셋을 보면 멘션길이가 1~2가 90프로 이상을 차지하는 것을 볼 수 있다.<br>
@@ -108,14 +108,10 @@ NER + ED model이 좋은 성능을 내는 것을 확인할 수 있다.
 윗값은 정답 entity를 맞출 확률이고, 아랫값은 정답 entity를 맞춘것 + 
 후보엔티티에서 score가 가장 높은 엔티티가 정답엔티티 이지만 score가 "한계점"을 넘지 못한 것을 포함한 확률이라 보면 된다.
 따라서 아랫값이 조금 더 높다.<br>
-그리고 멘션의 길이가 길어질수록 성능이 현저히 떨어지는 것을 보인다.
+그리고 멘션의 길이가 길어질수록 성능이 현저히 떨어지는 것을 보인다.<br>
 
-![png](/images/image9.png "그림9")
-![png](/images/image8.png "그림8"){: width="100%" height="100%"}
 
-![png](/images/image9.png "그림9")
-![png](/images/image8.png "그림8"){: width="100%" height="100%"}
-![test3](/images/image9.png)
+![png](/images/image9.png "그림9"){: width="100%" height="100%"}<br>
 <AIDA A 데이터셋에서 멘션 길이 별 맞는 entity 예측할 확률>
 
 빨강(1,3,5) = 멘션 잘 찾고 엔티티도 잘 찾았는데, high score를 못받아서 not annotation<br>
