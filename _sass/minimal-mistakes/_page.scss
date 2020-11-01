@@ -371,7 +371,7 @@
   float: left;
   margin-left: 0;
   margin-right: 0;
-  width: 100%;
+  width: 1250px;
   clear: both;
 }
 
@@ -474,11 +474,11 @@
 
   @include breakpoint($large) {
     float: right;
-    width: calc(100% - #{$right-sidebar-width-narrow});
+    width: 1250px;
   }
 
   @include breakpoint($x-large) {
-    width: calc(100% - #{$right-sidebar-width});
+    width: 1250px;
   }
 
   a {
