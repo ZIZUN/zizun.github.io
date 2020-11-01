@@ -22,12 +22,12 @@
 .page {
   @include breakpoint($large) {
     float: right;
-    width: 1300px;
+    width: 1250px;
     padding-right: $right-sidebar-width-narrow;
   }
 
   @include breakpoint($x-large) {
-    width: 1300px;
+    width: 1250px;
     padding-right: $right-sidebar-width;
   }
 
@@ -46,7 +46,7 @@
       float: left;
       margin-left: 0;
       margin-right: 0;
-      width: 1300px;
+      width: 1250px;
       clear: both;
     }
   }
