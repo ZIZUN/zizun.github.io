@@ -43,5 +43,36 @@ Wikipedia dump에서 Ant라는 mention은 96퍼센트의 insect_Ant, 0.8퍼센�
 
 따라서 희귀한 엔티티 (eg. Apache_Ant)를 직접 학습하는 것보다, 엔티티의 카테고리 정보들을 predict하는 것이 더 효율적이라고 저자는 생각했다.
 
+# Setup
+
+엔티티링킹을 위한 standard한 데이터셋은
+
+D_el = {(mention, context, entity, a set of cadidate entitys) ... }
+
+다음과 같이 구성되어 train/dev/test 로 쪼개어 학습이 이루어진다.
+
+하지만 우리 모델에는
+
+D_wiki = {(mention, context, a set of Wikipedia categories) ... }
+
+다음과 같이 구성된다. 
+
+Φ : (mention, context) → T
+
+따라서 mention과 context로 category를 예측하는 entity typing 모델을 훈련시킨다고 볼 수 있다.
+
+e = Ω(Φ(m, c), a set of cadidate entitys).
+
+entity typing모델에서 나온 score값과 후보 엔티티들의 카테고리들과 비교해서 score를 매겨 entity를 prediction한다.
+
+학습된 모델로 D_el의 dev/test셋에 대해 eval 해보며 standard entity linking 모델과 성능을 비교해봄으로써 성능을 체크한다.
+
+우리 모델은 entity를 예측하는 것이 아니라(entity 자체의 정보는 이용안함으로써) 결국 category를 예측 하는 것이기 때문에
+ wikipedia train set을 단순히 기억하는 것보다 좋은 일반화 성능을 얻었다고 저자는 말한다.
+
+# Model
+
+
+
 
 
