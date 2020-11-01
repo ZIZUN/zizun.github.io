@@ -10,7 +10,7 @@
   padding-right: 1em;
   -webkit-animation: $intro-transition;
   animation: $intro-transition;
-  max-width: 105%;
+  max-width: 100%;
   -webkit-animation-delay: 0.15s;
   animation-delay: 0.15s;
 
@@ -22,12 +22,12 @@
 .page {
   @include breakpoint($large) {
     float: right;
-    width: calc(105% - #{$right-sidebar-width-narrow});
+    width: calc(100% - #{$right-sidebar-width-narrow});
     padding-right: $right-sidebar-width-narrow;
   }
 
   @include breakpoint($x-large) {
-    width: calc(105% - #{$right-sidebar-width});
+    width: calc(100% - #{$right-sidebar-width});
     padding-right: $right-sidebar-width;
   }
 
@@ -36,7 +36,7 @@
     margin-top: 1em;
     margin-left: 0;
     margin-right: 0;
-    width: 105%;
+    width: 100%;
     clear: both;
 
     .page__content,
@@ -46,7 +46,7 @@
       float: left;
       margin-left: 0;
       margin-right: 0;
-      width: 105%;
+      width: 100%;
       clear: both;
     }
   }
@@ -182,7 +182,7 @@
 }
 
 .page__hero-image {
-  width: 105%;
+  width: 100%;
   height: auto;
   -ms-interpolation-mode: bicubic;
 }
@@ -371,7 +371,7 @@
   float: left;
   margin-left: 0;
   margin-right: 0;
-  width: 105%;
+  width: 100%;
   clear: both;
 }
 
@@ -417,7 +417,7 @@
   height: 60px;
 
   @include breakpoint($large) {
-    width: 105px;
+    width: 100px;
     height: 100px;
   }
 }
@@ -437,10 +437,10 @@
 
 .comment__content-wrapper {
   float: right;
-  width: calc(105% - 60px);
+  width: calc(100% - 60px);
 
   @include breakpoint($large) {
-    width: calc(105% - 100px);
+    width: calc(100% - 100px);
   }
 }
 
@@ -474,11 +474,11 @@
 
   @include breakpoint($large) {
     float: right;
-    width: calc(105% - #{$right-sidebar-width-narrow});
+    width: calc(100% - #{$right-sidebar-width-narrow});
   }
 
   @include breakpoint($x-large) {
-    width: calc(105% - #{$right-sidebar-width});
+    width: calc(100% - #{$right-sidebar-width});
   }
 
   a {
