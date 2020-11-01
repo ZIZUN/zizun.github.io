@@ -30,7 +30,7 @@ MD, ED 결합한 Endtoend방식 최초의 모델이고, 따라서 Mention Detect
 EndtoEnd방식이 아닌 논문에서 제시한 NER + ED model을 쓰는것이 낫다고 말한다.<br><br>
 
 
-![png](/images/image1.png "그림1"){: width="100%" height="100%"}  
+![png](/images/image1.png "그림1"){: width="50%" height="50%"}  
 
 ## 1. Embedding
 
