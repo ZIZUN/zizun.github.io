@@ -27,7 +27,7 @@
   }
 
   @include breakpoint($x-large) {
-    width: calc(150% - #{$right-sidebar-width});
+    width: calc(120% - #{$right-sidebar-width});
     padding-right: $right-sidebar-width;
   }
 
@@ -36,7 +36,7 @@
     margin-top: 1em;
     margin-left: 0;
     margin-right: 0;
-    width: 150%;
+    width: 120%;
     clear: both;
 
     .page__content,
