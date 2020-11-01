@@ -22,12 +22,12 @@
 .page {
   @include breakpoint($large) {
     float: right;
-    width: 1250px;
+    width: calc(100% - #{$right-sidebar-width-narrow});
     padding-right: $right-sidebar-width-narrow;
   }
 
   @include breakpoint($x-large) {
-    width: 1250px;
+    width: calc(100% - #{$right-sidebar-width});
     padding-right: $right-sidebar-width;
   }
 
@@ -46,7 +46,7 @@
       float: left;
       margin-left: 0;
       margin-right: 0;
-      width: 1250px;
+      width: 100%;
       clear: both;
     }
   }
@@ -371,7 +371,7 @@
   float: left;
   margin-left: 0;
   margin-right: 0;
-  width: 1250px;
+  width: 100%;
   clear: both;
 }
 
@@ -474,11 +474,11 @@
 
   @include breakpoint($large) {
     float: right;
-    width: 1250px;
+    width: calc(100% - #{$right-sidebar-width-narrow});
   }
 
   @include breakpoint($x-large) {
-    width: 1250px;
+    width: calc(100% - #{$right-sidebar-width});
   }
 
   a {
