@@ -1,6 +1,6 @@
 ﻿---
 title:  "[엔티티 링킹] Fine-Grained Entity Typing for Domain Independent Entity Linking"
-excerpt: "Fine-Grained Entity Typing for Domain Independent Entity Linking 논문 요약"
+excerpt: "Fine-Grained Entity Typing for Domain Independent Entity Linking 논문 소개"
 toc: true
 toc_sticky: true
 header:
@@ -45,6 +45,9 @@ Wikipedia dump에서 Ant라는 mention은 96퍼센트의 insect_Ant, 0.8퍼센�
 
 즉, entity로 그냥 매핑하는 것보다 category로 매핑하는 모델을 만드는 것이 일반화 성능에도 좋고, 모델 성능에도 좋을 것임을 대충 예감할 수 있다 ㅎ
 
+
+
+
 # Setup
 
 엔티티링킹을 위한 standard한 데이터셋은
@@ -71,6 +74,9 @@ entity typing모델에서 나온 score값과 후보 엔티티들의 카테고리
 
 우리 모델은 entity를 예측하는 것이 아니라(entity 자체의 정보는 이용안함으로써) 결국 category를 예측 하는 것이기 때문에
  wikipedia train set을 단순히 기억하는 것보다 좋은 일반화 성능을 얻었다고 저자는 말한다.
+
+
+
 
 # Model
 
@@ -100,6 +106,9 @@ T = o(WV)
 
 W와 V의 행렬곱 결과에 element-wise Sigmoid를 취해 마지막 결과인 probability vector T를 얻는다.
 
+
+
+
 # Train
 
 [그림]
@@ -107,6 +116,9 @@ W와 V의 행렬곱 결과에 element-wise Sigmoid를 취해 마지막 결과인
 학습은 다음과 같이 간단한 binary crossentropy 식으로 loss함수를 구성해 이루어짐을 알 수 있다.
 
 i는 각 카테고리들을 가르키고, y는 mention이 이 카테고리를 포함한다면 1 아니면 0, t는 모델의 추론값이라고 보면 된다.
+
+
+
 
 # Inference
 
