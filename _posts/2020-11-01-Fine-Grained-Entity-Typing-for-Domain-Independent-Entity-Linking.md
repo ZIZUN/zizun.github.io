@@ -45,7 +45,7 @@ Wikipedia dump에서 Ant라는 mention은 96퍼센트의 insect_Ant, 0.8퍼센�
 
 즉, entity로 그냥 매핑하는 것보다 category로 매핑하는 모델을 만드는 것이 일반화 성능에도 좋고, 모델 성능에도 좋을 것임을 대충 예감할 수 있다 ㅎ
 
-
+<br><br>
 
 
 # Setup
@@ -76,7 +76,7 @@ entity typing모델에서 나온 score값과 후보 엔티티들의 카테고리
  wikipedia train set을 단순히 기억하는 것보다 좋은 일반화 성능을 얻었다고 저자는 말한다.
 
 
-
+<br><br>
 
 # Model
 
@@ -108,7 +108,7 @@ W와 V의 행렬곱 결과에 element-wise Sigmoid를 취해 마지막 결과인
 
 
 
-
+<br><br>
 # Train
 
 [그림]
@@ -119,7 +119,7 @@ i는 각 카테고리들을 가르키고, y는 mention이 이 카테고리를 �
 
 
 
-
+<br><br>
 # Inference
 
 
