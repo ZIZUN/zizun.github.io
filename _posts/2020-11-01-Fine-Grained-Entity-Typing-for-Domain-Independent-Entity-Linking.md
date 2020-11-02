@@ -43,6 +43,8 @@ Wikipedia dump에서 Ant라는 mention은 96퍼센트의 insect_Ant, 0.8퍼센�
 
 따라서 희귀한 엔티티 (eg. Apache_Ant)를 직접 학습하는 것보다, 엔티티의 카테고리 정보들을 predict하는 것이 더 효율적이라고 저자는 생각했다.
 
+즉, entity로 그냥 매핑하는 것보다 category로 매핑하는 모델을 만드는 것이 일반화 성능에도 좋고, 모델 성능에도 좋을 것임을 대충 예감할 수 있다 ㅎ
+
 # Setup
 
 엔티티링킹을 위한 standard한 데이터셋은
@@ -71,6 +73,43 @@ entity typing모델에서 나온 score값과 후보 엔티티들의 카테고리
  wikipedia train set을 단순히 기억하는 것보다 좋은 일반화 성능을 얻었다고 저자는 말한다.
 
 # Model
+
+모델에 대해 자세히 살펴보면,
+
+우선 ELMO를 이용해 sequences of contextualized word vectors c(context), m(mention)을 만들어낸다.
+
+C = Attention(bi-LSTM([c; p]))
+
+얻어낸 c와 p(location embedding)을 concat하여 bilsm attention layer를 통해 representation C를 얻는다.
+
+M_word = Attention(bi-LSTM(m)).
+
+마찬가지로 mention도 같은 과정을 거쳐 representation을 얻고,
+
+M_char = 1D_CNN(m_char)
+
+1D 컨볼루션을 통해 mention의 character-level representation을 얻어낸다.
+
+V = C ; M_word ; M_char ∈ R_d
+
+이를 모두 concat해서 d차원의 V를 얻어낸다.
+
+이 V를 위한 (카테고리 갯수 X d차원)의 weight 매트릭스 W를 만들고
+
+T = o(WV)
+
+W와 V의 행렬곱 결과에 element-wise Sigmoid를 취해 마지막 결과인 probability vector T를 얻는다.
+
+# Train
+
+[그림]
+
+학습은 다음과 같이 간단한 binary crossentropy 식으로 loss함수를 구성해 이루어짐을 알 수 있다.
+
+i는 각 카테고리들을 가르키고, y는 mention이 이 카테고리를 포함한다면 1 아니면 0, t는 모델의 추론값이라고 보면 된다.
+
+# Inference
+
 
 
 

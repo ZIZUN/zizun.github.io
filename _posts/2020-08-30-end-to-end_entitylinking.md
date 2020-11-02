@@ -1,6 +1,6 @@
 ﻿---
 title:  "[엔티티 링킹] End-to-End Neural Entity Linking"
-excerpt: "End-to-End Neural Entity Linking 논문 요약"
+excerpt: "End-to-End Neural Entity Linking 논문 소개"
 toc: true
 toc_sticky: true
 header:
