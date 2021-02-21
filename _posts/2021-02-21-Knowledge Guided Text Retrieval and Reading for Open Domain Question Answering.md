@@ -28,7 +28,7 @@ last_modified_at: 2021-02-21T08:06:00-05:00
 
 # Content
 
-![png](/images/q1i1.PNG "그림1"){: width="50%" height="50%"}  
+![png](/images/q1i1.PNG "그림1"){: width="100%" height="100%"}  
 
 위의 그림을 보면 Question에 대해 GraphRetriever를 통해(왼쪽) passage그래프를 구성하고 GraphrReader(오른쪽) 를 통해 representation을 뽑아내는 모습이다.
 
@@ -54,19 +54,19 @@ GraphReader에 대해 설명하자면, 다음과 같다.
 
 2.	인코딩하여 뽑은 representation을 GCN구조를 이용해 graph관계를 이해한 passage별 representation을 다시 뽑는다. 수식은 다음과 같다.  f 는 concatenation으로 보면된다. 저자가 다른 거창한 연산(element wise 곱)보다 잘 작동한다고 한다.
 
-![png](/images/q1i2.PNG "그림1"){: width="50%" height="50%"}  
+![png](/images/q1i2.PNG "그림1"){: width="100%" height="100%"}  
 
-![png](/images/q1i3.PNG "그림1"){: width="50%" height="50%"}  
+![png](/images/q1i3.PNG "그림1"){: width="100%" height="100%"}  
 
 Z는 뽑아낸 단락별 representation이라 보면 되고 어떤 단락이 정답일지 probability를 뜻한다고 보면된다..
 
-![png](/images/q1i4.PNG "그림1"){: width="50%" height="50%"}  
+![png](/images/q1i4.PNG "그림1"){: width="100%" height="100%"}  
 
 Softmax를 이용해 뽑은 단락중에(maxlen정해짐) 어떤 토큰이 start, end토큰일지 probability 나타낸다고 보면된다.
 
 그래서 Objective function은 다음과같다.
 
-![png](/images/q1i5.PNG "그림1"){: width="50%" height="50%"}  
+![png](/images/q1i5.PNG "그림1"){: width="100%" height="100%"}  
 
 passage 선택하는 것이랑 span찾는 부분을 더해서 maximum likelihood object function를 구성한 것을 알 수 있다.
 
