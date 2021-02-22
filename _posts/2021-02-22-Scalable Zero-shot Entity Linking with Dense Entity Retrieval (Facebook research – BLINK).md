@@ -34,11 +34,11 @@ last_modified_at: 2021-02-22T08:06:00-05:00
 
 - Bi-encoder의 구성
 
-![png](/images/1.PNG "그림1"){: width="100%" height="100%"}  
+![png](/images/el1/1.PNG "그림1"){: width="100%" height="100%"}  
 
 스코어는 각 인코더에서 뽑은 representation을 내적해서 구한다.
 
-![png](/images/2.PNG "그림1"){: width="100%" height="100%"}  
+![png](/images/el1/2.PNG "그림1"){: width="100%" height="100%"}  
 
 따라서 로스는 다음과 같이 구성된다.(Softmax)
 
@@ -48,7 +48,7 @@ last_modified_at: 2021-02-22T08:06:00-05:00
 
 Cross encoder는 mention context와 candidate entity description과 결합하여 입력으로 들어간다.
 
-![png](/images/3.PNG "그림1"){: width="100%" height="100%"}  
+![png](/images/el1/3.PNG "그림1"){: width="100%" height="100%"}  
 
 스코어는 인코더에서 뽑아낸 representation에 linear layer(W)를 적용해 뽑아낸다.
 
