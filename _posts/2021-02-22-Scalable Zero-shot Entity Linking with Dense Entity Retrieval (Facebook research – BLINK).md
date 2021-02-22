@@ -26,6 +26,7 @@ last_modified_at: 2021-02-22T08:06:00-05:00
 엔티티의 description을 이용하기 때문에 물론 제로샷 링킹도 가능하겠다.
 (추가로 biencoder 성능향상을 위해 학습할 때 crossencoder로부터 지식증류를 이용했다고 한다.)
 
+![png](/images/el1/4.PNG "그림1"){: width="100%" height="100%"}  
 
 <br>
 
