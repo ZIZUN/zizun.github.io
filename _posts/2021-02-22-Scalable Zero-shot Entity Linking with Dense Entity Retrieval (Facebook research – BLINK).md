@@ -35,11 +35,11 @@ last_modified_at: 2021-02-22T08:06:00-05:00
 
 - Bi-encoder의 구성
 
-![png](/images/el1/1.PNG "그림1"){: width="100%" height="100%"}  
+![png](/images/el1/1.PNG "그림1"){: width="70%" height="70%"}  
 
 스코어는 각 인코더에서 뽑은 representation을 내적해서 구한다.
 
-![png](/images/el1/2.PNG "그림1"){: width="100%" height="100%"}  
+![png](/images/el1/2.PNG "그림1"){: width="70%" height="70%"}  
 
 따라서 로스는 다음과 같이 구성된다.(Softmax)
 
@@ -49,7 +49,7 @@ last_modified_at: 2021-02-22T08:06:00-05:00
 
 Cross encoder는 mention context와 candidate entity description과 결합하여 입력으로 들어간다.
 
-![png](/images/el1/3.PNG "그림1"){: width="100%" height="100%"}  
+![png](/images/el1/3.PNG "그림1"){: width="70%" height="70%"}  
 
 스코어는 인코더에서 뽑아낸 representation에 linear layer(W)를 적용해 뽑아낸다.
 
@@ -57,4 +57,4 @@ Cross encoder는 mention context와 candidate entity description과 결합하여
 
 Qualitative 분석에서 biencoder는 ronaldo를 브라질 축구선수로 링킹(Top score)했지만, cross-encoder를 이용해 정답을 링킹했다. 이로써, context, entity description 간의 관계, attention을 이용해 인코딩 하는 것이 정확하게 링킹하는 데에는 중요하다고 볼 수 있다. 
 
-이어지는 논문으로 페이스북이 ELQ를 발표했는데, biencoder만을 이용하여 성능보단 속도, 효율에 집중하여 question에 대한 엔티티링킹을 구현했다. 솔직히 본 논문이랑 별 차이가 없긴 하지만, biencoder만으로도 충분한 성능이 나고 qa에 적용하려면 속도가 중요하므로 굳이 cross encoder를 사용하지 않고, biencoder를 썼다는 정도 인 것 같다.
+이어지는 논문으로 페이스북이 ELQ를 발표했는데, biencoder만을 이용하여 성능보단 속도, 효율에 집중하여 question에 대한 엔티티링킹을 end to end로 구현했다. 솔직히 본 논문이랑 별 차이가 없는 것 같기도 하지만, mention detection과 entity disambiguation를 함께 학습했다는 점에서(endtoend) 성능향상이 있었고, biencoder만으로도 충분한 성능이 나고 qa에 적용하려면 속도가 중요하므로 굳이 cross encoder를 사용하지 않고, biencoder를 썼다는 정도 인 것 같다.
