@@ -13,7 +13,7 @@ tags:
   - Entity Disambiguation
   - 개체 연결
   - 중의성 해소
-last_modified_at: 2021-02-23T09:06:00-05:00
+last_modified_at: 2021-02-24T09:06:00-05:00
 ---
 # Introduction
 
@@ -43,6 +43,8 @@ Pool-transformer에 약간의 어텐션을 추가한 cand-pool-transformer 세�
 
 
 ![png](/images/el3/2.PNG "그림1"){: width="50%" height="50%"}  
+
+- Result
 
 제로샷 엔티티링킹 baseline 결과들은 다음과 같다.
 
