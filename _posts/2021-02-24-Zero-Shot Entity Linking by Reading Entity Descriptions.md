@@ -41,10 +41,9 @@ last_modified_at: 2021-02-24T09:06:00-05:00
 멘션컨택스트, 엔티티인코딩을 따로하는 pool-transformer
 Pool-transformer에 약간의 어텐션을 추가한 cand-pool-transformer 세가지 모델을 사용했다.
 
+- Result
 
 ![png](/images/el3/2.PNG "그림1"){: width="60%" height="60%"}  
-
-- Result
 
 제로샷 엔티티링킹 baseline 결과들은 다음과 같다.
 
