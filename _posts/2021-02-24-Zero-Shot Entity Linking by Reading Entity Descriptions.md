@@ -24,7 +24,7 @@ last_modified_at: 2021-02-24T09:06:00-05:00
 셋째, domain adaptive pretraining(DAP)를 적용했다. 그냥 마지막에 해당 task에 맞게 소스도메인데이터(labled)로 supervised learning해주기전에 타겟 도메인에 맞게 프리트레인 하는 것 같다.. (+ 간단하지만 새로운 방법이라고 하는데; 별로 새롭진 않은 것 같다.)
 
 
-![png](/images/el3/1.PNG "그림1"){: width="100%" height="100%"}  
+![png](/images/el3/1.PNG "그림1"){: width="60%" height="60%"}  
 
 다음 figure는 제로샷 엔티티링킹에 대해 설명한다. 학습때 전혀 보지않은 엔티티(Orient Expedition)를 test에서 맞추는 모습이다. 다른 resource(e.g alias table, structured data) 없이 entity description만을 이용한다.
 
@@ -42,7 +42,7 @@ last_modified_at: 2021-02-24T09:06:00-05:00
 Pool-transformer에 약간의 어텐션을 추가한 cand-pool-transformer 세가지 모델을 사용했다.
 
 
-![png](/images/el3/2.PNG "그림1"){: width="50%" height="50%"}  
+![png](/images/el3/2.PNG "그림1"){: width="60%" height="60%"}  
 
 - Result
 
@@ -57,7 +57,7 @@ Ganea and hofmann, gupta et al. 의 모델들은 제로샷 성능이 많이 떨�
 저자는 말한다. 따라서 논문에서 제시하는 제로샷 엔티티링킹 성능을 올리려면 “언어모델의 reading comprehension 능력”이 매우 중요하다고.
 
 
-![png](/images/el3/3.PNG "그림1"){: width="70%" height="70%"}  
+![png](/images/el3/3.PNG "그림1"){: width="90%" height="90%"}  
 
 다음은 domain adaptive pretraining(DAP)를 적용했을 때 나은 결과가 나온다는 실험결과이다.
 
