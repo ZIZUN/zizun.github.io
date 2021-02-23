@@ -13,7 +13,7 @@ tags:
   - Entity Disambiguation
   - 개체 연결
   - 중의성 해소
-last_modified_at: 2021-02-22T09:06:00-05:00
+last_modified_at: 2021-02-23T09:06:00-05:00
 ---
 # Introduction
 
