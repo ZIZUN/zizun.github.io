@@ -18,9 +18,13 @@ last_modified_at: 2021-02-24T09:06:00-05:00
 # Introduction
 
 본 논문은 새롭게 zero shot entity linking task를 정의하는 논문 이다. 그것은 entity에 대한 어떤 resource도없이 entity의 description만을 이용해서 학습 때 보지 못한 entity를 링킹하는 것이다. (따라서, 언어모델의 성능이 중요할 것으로 보인다)
+
 저자는 이 논문의 기여를 세가지로 정리했다.
+
 첫째, 그들은 엔티티링킹의 일반화 성능을 위해, 새롭게 zeroshot 엔티티링킹 테스크를 제안했고 데이터셋도 만들었다.
+
 둘째, mention context와 entity description사이에 이전엔 사용되지 않던 어텐션을 적용했다. 이를 적용하는 것이 이번 테스크에 결정적이다.
+
 셋째, domain adaptive pretraining(DAP)를 적용했다. 그냥 마지막에 해당 task에 맞게 소스도메인데이터(labled)로 supervised learning해주기전에 타겟 도메인에 맞게 프리트레인 하는 것 같다.. (+ 간단하지만 새로운 방법이라고 하는데; 별로 새롭진 않은 것 같다.)
 
 
@@ -60,7 +64,7 @@ Ganea and hofmann, gupta et al. 의 모델들은 제로샷 성능이 많이 떨�
 
 다음은 domain adaptive pretraining(DAP)를 적용했을 때 나은 결과가 나온다는 실험결과이다.
 
-Source domain labeled data에 파인튜닝 하기 전 마지막 단계에 targe domain unlabeld 데이터에 pretrain을 함으로써 타겟 도메인의 성능을 높이는 결과를 가져옴을 확인할 수 있다.
+Source domain labeled data에 파인튜닝 하기 전 마지막 단계에 target domain unlabeld 데이터에 pretrain을 함으로써 타겟 도메인의 성능을 높이는 결과를 가져옴을 확인할 수 있다.
 
 저자는 마지막으로 말한다. 이제 NIL mention, entity detection이나 mention detection, candidate entity generation이 성능향상을 위해 남아있는 주요한 부분이라고.
 
