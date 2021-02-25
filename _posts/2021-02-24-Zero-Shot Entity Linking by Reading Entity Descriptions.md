@@ -17,7 +17,7 @@ last_modified_at: 2021-02-24T09:06:00-05:00
 ---
 # Introduction
 
-본 논문은 새롭게 zero shot entity linking task를 정의하는 논문 이다. 그것은 entity에 대한 어떤 resource도없이 entity의 description만을 이용해서 학습 때 보지 못한 entity를 링킹하는 것이다. (따라서, 언어모델의 성능이 중요할 것으로 보인다)
+본 논문은 새롭게 zero shot entity linking task를 정의하는 논문 이다. 그것은 어떤 도메인의 entity에 대한 어떤 labeld 데이터 없이 entity의 description만을 이용해서 학습 때 보지 못한 entity를 링킹하는 것이다. 원하는 도메인의 text는 언어모델 트레이닝에 이용가능하다. (따라서, 언어모델의 언어이해 성능이 중요할 것으로 보인다)
 
 저자는 이 논문의 기여를 세가지로 정리했다.
 
