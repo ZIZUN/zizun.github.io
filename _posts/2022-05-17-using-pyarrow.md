@@ -61,3 +61,18 @@ im = Image.open(BytesIO(base64.b64decode(table['image'][0].as_py())))
 im.save('/home/leesm/Project/2022_1/WebQA/data/test_pyarrow/img_sample.png')
 ########################################################   
 ```
+
+pytorch 사용자일 경우 __getitem__ 에서 아래와 같은 방식으로 작성해주면 된다.
+
+```python
+    def __getitem__(self, item):
+        output = self.processed_dataset[item]
+        
+     
+        im = Image.open(BytesIO(base64.b64decode(self.table['image'][self.imageid_to_arrowid[output['patch_images']]].as_py())))
+        
+        patch_img = self.patch_resize_transform(im)       
+        output.update({'patch_images': patch_img})    
+        
+        return {key: torch.tensor(value) for key, value in output.items()}
+```
