@@ -14,6 +14,8 @@ tags:
 last_modified_at: 2021-08-23T09:06:00-05:00
 ---
 
+- Make arrow example
+
 ```python
 ######################################################## Make arrow example
 import pandas as pd
@@ -21,8 +23,8 @@ import pyarrow as pa
 
 dataframe = pd.DataFrame(
     {
-        'img_id': [1,2,3],
-        'img': ['adsfasdff', 'adsfasdff', 'adsfasdff']        
+        'image_id': [1,2,3],
+        'image': ['adsfasdff', 'adsfasdff', 'adsfasdff']        
     }
 )
 
@@ -36,8 +38,9 @@ with pa.OSFile(save_dir, "wb") as sink:
 ########################################################   
 ```
 
+- Read arrow example
 ```python
-######################################################## Make arrow example
+######################################################## Read arrow example
 import pyarrow as pa
 
 from PIL import Image
