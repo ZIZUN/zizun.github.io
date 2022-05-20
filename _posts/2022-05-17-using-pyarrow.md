@@ -68,11 +68,15 @@ pytorch 사용자일 경우 __getitem__ 에서 아래와 같은 방식으로 작
     def __getitem__(self, item):
         output = self.processed_dataset[item]
         
-     
-        im = Image.open(BytesIO(base64.b64decode(self.table['image'][self.imageid_to_arrowid[output['patch_images']]].as_py())))
-        
-        patch_img = self.patch_resize_transform(im)       
-        output.update({'patch_images': patch_img})    
-        
-        return {key: torch.tensor(value) for key, value in output.items()}
+        item_dict = {}
+        item_dict.update(output)
+        if output['patch_images'] != None:
+            item_dict.update({'patch_images': self.patch_resize_transform(
+                Image.open(BytesIO(base64.b64decode(self.table['image'][self.imageid_to_arrowid[output['patch_images']]].as_py())))
+                )})  # 3,256,256  
+        else:
+            item_dict.update({'patch_masks': [False] * (self.resolution // 16) * (self.resolution // 16),
+                              'patch_images': torch.ones(3,self.resolution, self.resolution) })
+            
+        return {key: torch.tensor(value) for key, value in item_dict.items()}
 ```
